@@ -26,83 +26,81 @@ def columnAsArrayString(column):
 def convertSplitToText(splits):
     arrayConverted = []
     for split in splits:
-        match split:
-            case 1:
-                arrayConverted.append("01 - gloooong!")
-            case 2:
-                arrayConverted.append("02 - FF1")
-            case 3:
-                arrayConverted.append("03 - Wind Waker")
-            case 4:
-                arrayConverted.append("04 - Bombs")
-            case 5:
-                arrayConverted.append("05 - Deku Leaf")
-            case 6:
-                arrayConverted.append("06 - Quiver")
-            case 7:
-                arrayConverted.append("07- Enter Helmaroc")
-            case 8:
-                arrayConverted.append("08 - FF2")
-            case 9:
-                arrayConverted.append("09 - Bombs too strong")
-            case 10:
-                arrayConverted.append("10 - Light arrows")
-            case 11:
-                arrayConverted.append("11 - Puppet Ganon")
-            case 12:
-                arrayConverted.append("12 - Morth Hover")
-            case 13:
-                arrayConverted.append("13 - Ganondorf")
-            case 14:
-                arrayConverted.append("14 - Fini")
+        if split == 1:
+            arrayConverted.append("01 - gloooong!")
+        elif split == 2:
+            arrayConverted.append("02 - FF1")
+        elif split ==  3:
+            arrayConverted.append("03 - Wind Waker")
+        elif split ==  4:
+            arrayConverted.append("04 - Bombs")
+        elif split ==  5:
+            arrayConverted.append("05 - Deku Leaf")
+        elif split ==  6:
+            arrayConverted.append("06 - Quiver")
+        elif split ==  7:
+            arrayConverted.append("07- Enter Helmaroc")
+        elif split ==  8:
+            arrayConverted.append("08 - FF2")
+        elif split ==  9:
+            arrayConverted.append("09 - Bombs too strong")
+        elif split ==  10:
+            arrayConverted.append("10 - Light arrows")
+        elif split ==  11:
+            arrayConverted.append("11 - Puppet Ganon")
+        elif split ==  12:
+            arrayConverted.append("12 - Morth Hover")
+        elif split ==  13:
+            arrayConverted.append("13 - Ganondorf")
+        elif split ==  14:
+            arrayConverted.append("14 - Fini")
     return arrayConverted
 
 def convertReasonResetToText(splits):
     arrayConverted = []
     for split in splits:
-        match split:
-            case 0:
-                arrayConverted.append("Aucune")
-            case 1:
-                arrayConverted.append("Autres")
-            case 2:
-                arrayConverted.append("Saut raté / tilt")
-            case 3:
-                arrayConverted.append("Sploush")
-            case 4:
-                arrayConverted.append("Light cycle")
-            case 5:
-                arrayConverted.append("Attrapé par Moblin")
-            case 6:
-                arrayConverted.append("Perte du Storage")
-            case 7:
-                arrayConverted.append("Les cordes")
-            case 8:
-                arrayConverted.append("Nuit à mercentile")
-            case 9:
-                arrayConverted.append("Door Cancel Early")
-            case 10:
-                arrayConverted.append("Door cancel Late")
-            case 11:
-                arrayConverted.append("Enter Deku")
-            case 12:
-                arrayConverted.append("Les chus")
-            case 13:
-                arrayConverted.append("Lip crush")
-            case 14:
-                arrayConverted.append("Mauvais set-up Quiver")
-            case 15:
-                arrayConverted.append("Super Swim raté")
-            case 16:
-                arrayConverted.append("Daronned")
-            case 17:
-                arrayConverted.append("Sotage raté")
-            case 18:
-                arrayConverted.append("Morth raté")
-            case 19:
-                arrayConverted.append("Morth troll")
-            case 20:
-                arrayConverted.append("Mort")
+        if split == 0:
+            arrayConverted.append("Aucune")
+        elif split ==  1:
+            arrayConverted.append("Autres")
+        elif split ==  2:
+            arrayConverted.append("Saut raté / tilt")
+        elif split ==  3:
+            arrayConverted.append("Sploush")
+        elif split ==  4:
+            arrayConverted.append("Light cycle")
+        elif split ==  5:
+            arrayConverted.append("Attrapé par Moblin")
+        elif split ==  6:
+            arrayConverted.append("Perte du Storage")
+        elif split ==  7:
+            arrayConverted.append("Les cordes")
+        elif split ==  8:
+            arrayConverted.append("Nuit à mercentile")
+        elif split ==  9:
+            arrayConverted.append("Door Cancel Early")
+        elif split ==  10:
+            arrayConverted.append("Door cancel Late")
+        elif split ==  11:
+            arrayConverted.append("Enter Deku")
+        elif split ==  12:
+            arrayConverted.append("Les chus")
+        elif split ==  13:
+            arrayConverted.append("Lip crush")
+        elif split ==  14:
+            arrayConverted.append("Mauvais set-up Quiver")
+        elif split ==  15:
+            arrayConverted.append("Super Swim raté")
+        elif split ==  16:
+            arrayConverted.append("Daronned")
+        elif split ==  17:
+            arrayConverted.append("Sotage raté")
+        elif split ==  18:
+            arrayConverted.append("Morth raté")
+        elif split ==  19:
+            arrayConverted.append("Morth troll")
+        elif split ==  20:
+            arrayConverted.append("Mort")
     return arrayConverted
     
 
