@@ -5,7 +5,7 @@ import pandas as pd
 
 def columnAsArrayInt(column):
     list = []
-    with open("tmp/stats.csv", "r") as f:
+    with open("public/stats.csv", "r") as f:
         for line in f:
             stats = line.split(",")
             value = stats[column]
@@ -15,7 +15,7 @@ def columnAsArrayInt(column):
 
 def columnAsArrayString(column):
     list = []
-    with open("tmp/stats.csv", "r") as f:
+    with open("public/stats.csv", "r") as f:
         for line in f:
             stats = line.split(",")
             value = stats[column]
@@ -111,7 +111,6 @@ def printGraphe():
     array2 = convertReasonResetToText(columnAsArrayInt(14))
     # Create a DataFrame for easier manipulation
     # Create a DataFrame for easier manipulation
-    print(array1)
     df = pd.DataFrame({'array1': array1, 'array2': array2})
 
     # Group by array1 and array2, and then count occurrences
@@ -134,6 +133,6 @@ def printGraphe():
 
     # Adjust layout to make room for the legend
     plt.tight_layout(rect=[0, 0, 1, 1])
-    plt.savefig('foo.png')
+    plt.savefig('public/foo.png')
 
 printGraphe()

@@ -18,7 +18,7 @@ def getGoogleSeet(spreadsheet_id, outDir, outFile):
 
 ##############################################
 
-outDir = 'tmp/'
+outDir = 'public/'
 
 os.makedirs(outDir, exist_ok = True)
 filepath = getGoogleSeet('14MAEAGOOf56EBViRK6Ee9M0Eb4bGpqRq08SH-kj6D70', outDir, "stats.csv")
