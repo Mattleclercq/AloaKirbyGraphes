@@ -5,7 +5,7 @@ import pandas as pd
 
 def columnAsArrayInt(column):
     list = []
-    with open("public/stats.csv", "r") as f:
+    with open("ServerExposeGraphes/public/stats.csv", "r") as f:
         for line in f:
             stats = line.split(",")
             value = stats[column]
@@ -15,7 +15,7 @@ def columnAsArrayInt(column):
 
 def columnAsArrayString(column):
     list = []
-    with open("public/stats.csv", "r") as f:
+    with open("ServerExposeGraphes/public/stats.csv", "r") as f:
         for line in f:
             stats = line.split(",")
             value = stats[column]
@@ -133,6 +133,6 @@ def printGraphe():
 
     # Adjust layout to make room for the legend
     plt.tight_layout(rect=[0, 0, 1, 1])
-    plt.savefig('public/foo.png')
+    plt.savefig('ServerExposeGraphes/public/resetOnReason.png')
 
 printGraphe()
